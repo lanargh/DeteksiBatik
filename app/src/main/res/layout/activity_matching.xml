@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_matching"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.id.and.deteksibatik.MatchingActivity">
+
+    <Button
+        android:id="@+id/scan_pencocokan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/take"
+        android:layout_marginTop="35dp"
+        android:background="@color/dark_purple_600"
+        android:text="Matching Picture"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_matching"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/img_matching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="300dp"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

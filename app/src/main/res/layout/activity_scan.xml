@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scan_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey_200"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear">
+
+        <ImageView
+            android:id="@+id/img_foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="300dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/img_binary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_foto"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="300dp"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+        <GridView
+            android:id="@+id/img_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:numColumns="5"
+            android:padding="1dp"></GridView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/img_grid">
+        <Button
+            android:id="@+id/ambil_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/dark_purple_600"
+            android:text="Ambil Gambar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/scan_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ambil_gambar"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/dark_purple_600"
+            android:text="Scan Gambar"
+            android:textColor="@color/white" />
+
+       <!-- <Button
+            android:id="@+id/insert_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/scan_gambar"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/dark_purple_600"
+            android:text="Insert Gambar"
+            android:textColor="@color/white"/>
+-->
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
