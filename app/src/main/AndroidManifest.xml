@@ -9,10 +9,14 @@
         android:resizeable="true"
         android:smallScreens="true" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA"
+        android:required="true"
+        android:requiredFeature="true"/>
 
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus"
+        android:required="false" />
     <uses-feature android:name="android.hardware.camera.front" />
     <uses-feature android:name="android.hardware.camera.front.autofocus" />
 
@@ -34,14 +38,14 @@
         </activity>
         <activity
             android:name=".ScanActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".HelpActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".KategoriActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".MatchingActivity"></activity>
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".MatchingActivity" />
     </application>
 
 </manifest>
